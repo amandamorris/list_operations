@@ -235,7 +235,10 @@ def custom_equality(some_list, another_list):
 
     """
 
-    return None
+    for index, elem in enumerate(some_list):
+        if elem != another_list[index]:
+            return False
+    return True
 
 
 ##############################################################################
