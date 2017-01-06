@@ -154,7 +154,9 @@ def custom_index(input_list, value):
 
     """
 
-    return 0
+    for index, elem in enumerate(input_list):
+        if elem == value:
+            return index
 
 
 def custom_count(input_list, value):
